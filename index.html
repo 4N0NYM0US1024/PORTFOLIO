@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravis, Cyrus Chase F.</title>
+    <link rel="stylesheet" href="../STYLES/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Ravis, Cyrus Chase F.</h1>
+        <p>Photographer & Videographer</p>
+        <button onclick="scrollToSection('about')">Learn More</button>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>Hi, I'm Cyrus Chase F. Ravis, a passionate photographer and videographer dedicated to capturing life's moments in their most authentic and creative forms. Whether it's the candid smile of a person, the breathtaking colors of a sunset, or the dynamic energy of a bustling city, I find joy in telling stories through the lens.</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project" onclick="openModal('project1')">
+                <h3>Project 1</h3>
+                <p>Click for details.</p>
+            </div>
+            <div class="project" onclick="openModal('project2')">
+                <h3>Project 2</h3>
+                <p>Click for details.</p>
+            </div>
+            <div class="project" onclick="openModal('project3')">
+                <h3>Project 3</h3>
+                <p>Click for details.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contactForm" onsubmit="submitForm(event)">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Ravis, Cyrus Chase F.</p>
+    </footer>
+
+    <script src="../SCRIPT/script.js"></script>
+</body>
+</html>
